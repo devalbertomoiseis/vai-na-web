@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 
+        (Accessible Rich Internet Applications):
+        Adicione atributos aria-required para indicar que um campo é obrigatório.
+        Utilize aria-live ou aria-atomic para elementos que exibem mensagens dinâmicas.
+
+        -->
+      <h1>Formulário</h1>
+      <form id="myForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" aria-required="true" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" aria-required="true" />
+
+        <label for="area">Área:</label>
+        <input type="text" id="area" name="area" />
+
+        <label for="phone">Telefone:</label>
+        <input type="tel" id="phone" name="phone" />
+
+        <div id="error-message" aria-live="polite" aria-atomic="true"></div>
+
+        <button type="button" onclick="validateForm()">Enviar</button>
+      </form>
+    </div>
+
+    <script src="./assets/javascript.js"></script>
+  </body>
+</html>

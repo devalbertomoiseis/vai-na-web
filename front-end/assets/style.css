@@ -1,3 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap");
+
+:root {
+  --background: #00145d;
+  --cor-texto: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--cor-texto);
+}
+
+.container {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 2%;
+}
+
+.container h1 {
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  margin: 20px 0 40px 0;
+}
+
+.container h1:after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 40px;
+  background: var(--cor-texto);
+  margin: 20px auto;
+}
+
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 4%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container form label {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 10px 0;
+}
+
+.container form input {
+  max-width: 100%;
+  height: 36px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  height: 44px;
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+button:hover {
+  background: var(--background);
+  color: var(--cor-texto);
+  transition: 0.4s;
+  border: 1px solid var(--cor-texto);
+}
+
 #error-message {
   color: red;
   margin-bottom: 10px;
